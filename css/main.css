@@ -1,0 +1,283 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-transition: background 200ms;
+    -moz-transition: background 200ms;
+    -ms-transition: background 200ms;
+    -o-transition: background 200ms;
+    transition: background 200ms;
+}
+body{
+    background: #f5f5f5;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+}
+.contain{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.header{
+    background-color: #eeeeee;
+}
+
+.header .item{
+    display: inline-block;
+    color: #666;
+    padding: 6px 10px;
+}
+.header .item:hover{
+    background: rgba(0,0,0,.05);
+}
+.header-2{
+    padding: 20px 0;
+}
+.header-2 .logo{
+    text-align: center;
+    font-size: 20px;
+/*.header-2 .logo {*/
+    /*background-images: url(../images/logo2.jpg);*/
+    /*background-size: contain;*/
+    /*background-repeat:no-repeat;*/
+    /*background-position: center center;*/
+    /*height: 60px;*/
+}
+.header-2 input,
+.header-2  button {
+    padding: 8px 20px;
+    border: 0;
+    outline: 0;
+}
+.header-2 .cart{
+    text-align: center;
+}
+
+.header-2 .cart a{
+    padding: 8px;
+    background: #fff;
+    border: 2px solid #eee;
+    float: right;
+    width: 80%;
+    line-height: 1.15;
+    color: #dd182b;
+}
+
+.header-2 input:focus{
+    -webkit-box-shadow: inset 0 0 2px 2px rgba(0,0,0,.3);
+    -moz-box-shadow: inset 0 0 2px 2px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 2px 2px rgba(0,0,0,.3);
+}
+
+.header-2  button:hover{
+    background: #ce1829;
+}
+
+.header-2  button{
+    background: #dd182b;
+    color: #fff;
+}
+
+.header-2 .col-5 {
+    border: 2px solid #dd182b;
+}
+
+.content{
+    display: block;
+}
+img{
+    width: 100%;
+}
+.footer{
+    display: block;
+    text-align: center;
+}
+.lf,
+.slider,
+.side{
+    float: left;
+}
+
+.rt{
+    float: right;
+}
+.contain:after,
+.contain:before,
+.clear-f:after,
+.clear-f:before{
+    content: '';
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9{
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+.col-1{
+    width:10%
+}
+
+.col-2{
+    width:20%
+}
+
+.col-3{
+    width:30%
+}
+
+.col-4{
+    width:40%
+}
+
+.col-5{
+    width:50%
+}
+
+.col-6{
+    width:60%
+}
+
+.col-7{
+    width:70%
+}
+
+.col-8{
+    width:80%
+}
+
+.col-9{
+    width:90%
+}
+
+.card{
+    height: 300px;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.1);
+}
+
+.side
+{
+    border: 1px solid red;
+    min-width: 150px;
+}
+
+.side .row{
+    padding: 1px;
+}
+
+.side .row:hover{
+    background: #ffe4dc;
+    color: #ff5000;
+}
+
+.avatar{
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: #ccc;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.side-l button{
+    border: 0;
+    background: #ff7600;
+    color: #fff;
+    margin-left: 2px;
+}
+.side-l button:hover{
+    background: #ff5000;
+}
+
+.side-l{
+    margin-bottom: 10px;
+    line-height: 1.7;
+    padding: 10px;
+    background: #fff;
+    color: #888;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.cat-title:before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 22px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: #ff7600;
+}
+
+.cat-title{
+    font-size: 22px;
+}
+
+.cat .item{
+    padding: 5px;
+}
+ul,ol{
+    list-style: none;
+}
+/*消除图片底部3像素距离*/
+img{
+    vertical-align: top;
+}
+.slider{
+    min-width: 100%;
+    height: 400px;
+
+    /*overflow: hidden;*/
+    position: relative;
+}
+.box{
+    width:  100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.box ul{
+    padding-left: 0;
+    margin: 0;
+    width:600%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.box ul li{
+    float: left;
+    width:  648px;
+}
+.slider ol{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+}
+.slider ol li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    margin-left:10px ;
+    cursor: pointer;
+}
+.slider ol li.current{
+    background-color: purple;
+}
